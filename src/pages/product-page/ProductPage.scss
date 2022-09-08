@@ -1,0 +1,18 @@
+@import "../../styles/main.scss";
+
+
+.product-content {
+    margin-left: 50px;
+    &__title {
+        text-align: center;
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
