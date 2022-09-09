@@ -36,7 +36,7 @@ const ProductCartPage = () => {
                                     <td>{element.price}</td>
                                     <td><img src={element.image} alt="" width="100px" height="80px"/></td>
                                     <td>{element.quantity}</td>
-                                    <td>{getTotalPrice(element.price,element.quantity)}</td>
+                                    <td>${getTotalPrice(element.price,element.quantity)}</td>
                                     <td>Remove</td>
                                 </tr>
                             )
