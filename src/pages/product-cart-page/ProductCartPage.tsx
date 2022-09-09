@@ -4,8 +4,14 @@ import Layout from "../../components/layout/Layout";
 import "./ProductCartPage.scss";
 
 const ProductCartPage = () => {
-    const p = useSelector((state:any)=> state.carts)
-    console.log(p);
+    const cartProducts = useSelector((state:any)=> state.carts)
+    console.log(cartProducts);
+
+    const getTotalPrice = (unitPrice:string, quantity:number) => {
+        const price = parseInt(unitPrice.split('$')[1]);
+        const totalPrice = price * quantity;
+        return totalPrice;
+    }
     
     return (
         <Layout>
@@ -15,10 +21,27 @@ const ProductCartPage = () => {
                     <tr>
                         <th>Serial</th>
                         <th>Product name</th>
+                        <th>Product Unit price</th>
                         <th>Product image</th>
                         <th>Quantity</th>
-                        <th>Remove</th>
+                        <th>Product Total price</th>
+                        <th>Action</th>
                     </tr>
+                    {
+                        cartProducts && cartProducts.carts.map((element: any, index: any) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{element.id}</td>
+                                    <td>{element.name}</td>
+                                    <td>{element.price}</td>
+                                    <td><img src={element.image} alt="" width="100px" height="80px"/></td>
+                                    <td>{element.quantity}</td>
+                                    <td>{getTotalPrice(element.price,element.quantity)}</td>
+                                    <td>Remove</td>
+                                </tr>
+                            )
+                        })
+                    }
                 </table>
             </div>
         </Layout>
