@@ -1,0 +1,16 @@
+@import "../../styles/main.scss";
+
+.product-cart-list {
+    margin: 0 30px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;  
+        text-align: left;
+    }
+}
