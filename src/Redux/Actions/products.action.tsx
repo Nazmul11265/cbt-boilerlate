@@ -2,7 +2,7 @@ import { productConstants } from "../constants/constants";
 import { products } from "../../data/products";
 
 export const getAllProducts = () => {
-    return async (dispatch:any) => {
+    return async (dispatch:any)  => {
         try {
             dispatch({ type: productConstants.GET_PRODUCT_REQUEST });
             dispatch({

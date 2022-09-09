@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import Layout from "../../components/layout/Layout";
 import ProductCard from "../../components/product-cards/ProductCard";
-import { products } from "../../data/products";
 import { useDispatch, useSelector } from 'react-redux';
 import "./ProductPage.scss";
 import { getAllProducts } from "../../Redux/Actions/products.action";
