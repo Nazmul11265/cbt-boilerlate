@@ -1,0 +1,30 @@
+@import "../../styles/main.scss";
+
+.quantity-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__plus-minus {
+        border: none;
+        background: $color_white;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    &__plus-minus:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+}

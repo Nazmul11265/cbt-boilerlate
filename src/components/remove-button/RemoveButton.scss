@@ -1,0 +1,22 @@
+@import "../../styles/main.scss";
+
+.remove-button-div {
+    display: flex;
+    align-items: center;
+    
+    &__btn {
+        margin: 0 10px;
+        border: none;
+        color: $color_red;
+        padding: 3px 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        background: $color_white;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+}
