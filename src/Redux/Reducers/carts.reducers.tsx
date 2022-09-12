@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { cartConstants } from "../constants/constants";
 
 interface actions {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { productConstants } from "../constants/constants";
 
 interface actions {
